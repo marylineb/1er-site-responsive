@@ -1,0 +1,145 @@
+/* BASE */
+body {
+  background: #0b080c;
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+h1,
+h2 {
+  margin: 0;
+}
+
+/* PAGE */
+
+/* HEADER */
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/header.avif);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  padding: 250px 50px;
+  justify-content: space-between;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  margin-right: 20px;
+}
+
+/* MAIN */
+
+/* PRESENTATION */
+main #presentation {
+  background-color: white;
+  background-position: center;
+  background-image: url(../images/bg-content.jpg);
+  background-repeat: no-repeat;
+  height: 450px;
+  /* display: flex; */
+}
+
+main #presentation div {
+  width: 40%;
+  padding-top: 100px;
+  padding-left: 150px;
+}
+
+main #presentation h1 {
+  color: #eeb58c;
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 50px;
+}
+
+main #presentation p {
+  color: #eeb58c;
+  line-height: 30px;
+  margin: 15px 0 0;
+  text-align: justify;
+}
+
+/* ADOPTION */
+main #adoption ul a img {
+  height: 200px;
+  width: 250px;
+  object-fit: cover;
+  margin-right: 50px;
+}
+
+main #adoption ul li {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+
+main #adoption ul li a {
+  color: #eeb58c;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #bebebe;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  margin-left: 20px;
+}
+
+/*------------------------- MEDIA QUERIES -------------------------*/
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 250px 0;
+  }
+  main #presentation {
+    background-position: right;
+  }
+  main #presentation div {
+    padding-top: 50px;
+    padding-left: 80px;
+  }
+  main #adoption {
+    padding-top: 50px;
+  }
+  main #adoption ul li {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 50px;
+    margin-bottom: 50px;
+  }
+  main #adoption ul a img {
+    margin-right: 0;
+  }
+  footer {
+    margin-top: 50px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
