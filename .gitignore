@@ -1,0 +1,17 @@
+# Système
+.DS_Store
+Thumbs.db
+__MACOSX/
+
+# Éditeurs
+.vscode/
+.idea/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Dépendances et logs
+node_modules/
+*.log
